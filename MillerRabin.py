@@ -17,12 +17,9 @@ def isPrime(n):
     if x == 1 or x == n - 1:
         return True
 
-    # test the remaining numbers (s = 0)
-    exponent *= 2
+    # test the remaining numbers
     while s > 1:
-        x = pow(a, exponent, n)
-        # instead of writing this line and using "exponent *=2"
-        # you can write x = (x, 2, n) to speed up the program
+        x = pow(x, 2, n)
         if x == 1:
             return False
         if x == n - 1:
