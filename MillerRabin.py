@@ -25,7 +25,6 @@ def isPrime(n):
         if x == n - 1:
             return True
         s -= 1
-        exponent *= 2
     return False
 
 def main():
